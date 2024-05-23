@@ -1,0 +1,11 @@
+[package]
+name = "energy-stats-uk-experiments"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+polars = { version = "0.39.2", features = ["lazy", "strings", "dtype-datetime", "dtype-time"] }
+csv = "1.1"
+serde = { version = "1.0.199", features = ["derive"] }
+chrono-tz = { version = "0.6", features = [ "filter-by-regex" ] }
+chrono = "0.4.38"
